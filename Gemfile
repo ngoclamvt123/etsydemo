@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.2.3"
+
+gem "figaro"
+gem "paperclip-dropbox", ">= 1.1.7"
 gem "paperclip", "~> 4.3"
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
