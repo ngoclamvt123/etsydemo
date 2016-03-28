@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby "2.2.3"
 
+gem 'devise'
 gem "figaro"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "paperclip", "~> 4.3"
