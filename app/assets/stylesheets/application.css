@@ -56,3 +56,13 @@ body {
 		margin: 0px;
 	}
 }
+.jumbotron {
+	background-image: url('jumbotron.jpg');
+	
+}
+
+.jumbotron {
+	h2, h3 { 
+		color: #d5641c;
+	 }
+}
