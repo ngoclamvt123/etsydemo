@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   
-  resources :listings
+  
+  resources :listings do
+    resources :orders
+  end
   get 'pages/about'
   get 'pages/contact'
   get 'seller' => "listings#seller"
