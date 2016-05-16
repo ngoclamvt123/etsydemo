@@ -8,7 +8,7 @@ class ListingsController < ApplicationController
     @listings = Listing.where(user: current_user).order("created_at DESC")
   end
   def index
-    @listings = Listing.all.order("created_at DESC")
+    @listings = Listing.all.where("name LIKE ?", "%#{params[:search]}%").page(params[:page]).order("created_at DESC")
   end
 
   # GET /listings/1
