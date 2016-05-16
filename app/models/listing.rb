@@ -1,5 +1,5 @@
 class Listing < ActiveRecord::Base
-  self.per_page = 8
+  self.per_page = 4
 	if Rails.env.development?
 		has_attached_file :image, styles: { medium: "200x200>", thumb: "100x100>" }, default_url: "default.jpg"
 		validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
